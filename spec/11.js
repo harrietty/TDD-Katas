@@ -6,8 +6,14 @@ const expect = chai.expect;
 const should = chai.should();
 import justify from '../11-justify-text';
 
-describe('justify', () => {
+xdescribe('justify', () => {
   it('should exist', () => {
-    justify.should.be.a.function;
+    expect(justify).to.be.a('function');
+  });
+  it('should take 1 argument', () => {
+    justify.should.have.length.of(1);
+  });
+  it('should return \'foo\' for \'foo\'', () => {
+    expect(justify('foo')).to.equal('foo');
   });
 });

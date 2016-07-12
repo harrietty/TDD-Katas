@@ -6,8 +6,14 @@ const expect = chai.expect;
 const should = chai.should();
 import validBraces from '../15-valid-braces';
 
-describe('validBraces', () => {
+xdescribe('validBraces', () => {
   it('should exist', () => {
-    validBraces.should.be.a.function;
+    expect(validBraces).to.have.length.of(1);
+  });
+  it('should take 1 argument', () => {
+    validBraces.should.have.length.of(1);
+  });
+  it('should return true for \'[]\'', () => {
+    expect(validBraces('[]')).to.be.true;
   });
 });

@@ -4,11 +4,16 @@
 import chai from 'chai';
 const expect = chai.expect;
 const should = chai.should();
-import shuffler from '../1-semi-random-card-shuffler';
+import objectify from '../1-objectify-query-string';
 
-
-describe('shuffler', () => {
+describe('objectify', () => {
   it('should exist', () => {
-    shuffler.should.be.a.function;
+    expect(objectify).to.be.a('function');
+  });
+  it('should take one argument', () => {
+    expect(objectify).to.have.length.of(1);
+  });
+  it('should return {name: Bob} for \'name=Bob\'', () => {
+    expect(objectify('name=Bob')).to.eql({name: 'Bob'});
   });
 });

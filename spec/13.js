@@ -6,8 +6,14 @@ const expect = chai.expect;
 const should = chai.should();
 import hamming from '../13-hamming-numbers';
 
-describe('hamming', () => {
+xdescribe('hamming', () => {
   it('should exist', () => {
-    hamming.should.be.a.function;
+    expect(hamming).to.be.a('function');
+  });
+  it('takes 1 argument', () => {
+    hamming.should.have.length.of(1);
+  });
+  it('should return 1 for 1', () => {
+    expect(hamming(1)).to.equal(1);
   });
 });

@@ -4,10 +4,16 @@
 import chai from 'chai';
 const expect = chai.expect;
 const should = chai.should();
-import polydivisible from '../3-polydivisible-numbers';
+import isPolydivisible from '../3-polydivisible-numbers';
 
-describe('polydivisible', () => {
+xdescribe('polydivisible', () => {
   it('should exist', () => {
-    polydivisible.should.be.a.function;
+    expect(isPolydivisible).to.be.a('function');
+  });
+  it('should take two arguments', () => {
+    isPolydivisible.should.have.length.of(2);
+  });
+  it('should return true for 1 and 10', () => {
+    expect(isPolydivisible(1, 10)).to.be.true;
   });
 });

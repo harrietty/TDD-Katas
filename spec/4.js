@@ -6,8 +6,14 @@ const expect = chai.expect;
 const should = chai.should();
 import nextBiggest from '../4-next-biggest-number';
 
-describe('nextBiggest', () => {
+xdescribe('nextBiggest', () => {
   it('should exist', () => {
-    nextBiggest.should.be.a.function;
+    expect(nextBiggest).to.be.a('function');
+  });
+  it('should take one argument', () => {
+    nextBiggest.should.have.length.of(1);
+  });
+  it('should return 5 for 5', () => {
+    expect(nextBiggest(5)).to.equal(5);
   });
 });

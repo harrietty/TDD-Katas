@@ -6,8 +6,14 @@ const expect = chai.expect;
 const should = chai.should();
 import validDate from '../5-valid-date-regex';
 
-describe('validDate', () => {
+xdescribe('validDate', () => {
   it('should exist', () => {
-    validDate.should.be.a.function;
+    expect(validDate).to.be.a('function');
+  });
+  it('should take one argument', () => {
+    validDate.should.have.length.of(1);
+  });
+  it('should return \'valid\' for \'[01-01]\'', () => {
+    expect(validDate('[01-01]')).to.equal('valid');
   });
 });

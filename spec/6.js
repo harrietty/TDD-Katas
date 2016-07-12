@@ -6,8 +6,14 @@ const expect = chai.expect;
 const should = chai.should();
 import numsAsWords from '../6-numbers-as-words';
 
-describe('numsAsWords', () => {
+xdescribe('numsAsWords', () => {
   it('should exist', () => {
-    numsAsWords.should.be.a.function;
+    expect(numsAsWords).to.be.a('function');
+  });
+  it('should take 1 argument', () => {
+    numsAsWords.should.have.length.of(1);
+  });
+  it('should return \'one\' for 1', () => {
+    expect(numsAsWords(1)).to.equal('one');
   });
 });

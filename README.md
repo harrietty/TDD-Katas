@@ -1,10 +1,10 @@
 # 15 Katas to complete with TDD
 
-#### 1. [Semi-random card shuffler](https://www.codewars.com/kata/stacked-deck-create-a-cheaters-deck-of-cards)
+#### 1. [Query String to Object](https://www.codewars.com/kata/objectify-a-url-query-string)
 
 #### 2. [First n prime numbers](https://www.codewars.com/kata/first-n-prime-numbers)
 
-#### 3. [Polydivisible Numbers](https://www.codewars.com/kata/polydivisible-numbers)
+#### 3. [Polydivisible Numbers (isPolydivisible only)](https://www.codewars.com/kata/polydivisible-numbers)
 
 #### 4. [Next biggest number with the same digits](https://www.codewars.com/kata/next-bigger-number-with-the-same-digits)
 

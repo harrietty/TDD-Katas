@@ -7,8 +7,14 @@ const should = chai.should();
 import firstNPrimes from '../2-first-n-primes';
 
 
-describe('firstNPrimes', () => {
+xdescribe('firstNPrimes', () => {
   it('should exist', () => {
-    firstNPrimes.shoud.be.a.function;
+    expect(firstNPrimes).to.be.a('function');
+  });
+  it('should accept 1 argument', () => {
+    firstNPrimes.should.have.length.of(1);
+  });
+  it('should return 2 when passed 1', () => {
+    expect(firstNPrimes(1)).to.equal(2);
   });
 });

@@ -6,8 +6,14 @@ const expect = chai.expect;
 const should = chai.should();
 import scrambled from '../8-scrambled-letters';
 
-describe('scrambled', () => {
+xdescribe('scrambled', () => {
   it('should exist', () => {
-    scrambled.should.be.a.function;
+    expect(scrambled).to.be.a('function');
+  });
+  it('should take 2 arguments', () => {
+    scrambled.should.have.length.of(2);
+  });
+  it('should return true for \'ab\' and \'ab\'', () => {
+    expect(scrambled('ab', 'ab')).to.be.true;
   });
 });
