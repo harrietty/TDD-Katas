@@ -1,0 +1,30 @@
+{
+  "name": "tdd-katas",
+  "version": "1.0.0",
+  "description": "A selection of Katas from CodeWars completed with TDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register ./spec",
+    "lint": "semistandard --verbose | snazzy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harrietty/TDD-Katas.git"
+  },
+  "author": "Harriet Ryder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harrietty/TDD-Katas/issues"
+  },
+  "homepage": "https://github.com/harrietty/TDD-Katas#readme",
+  "dependencies": {
+    "lodash": "^4.13.1"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "chai": "^3.5.0"
+  }
+}
